@@ -17,7 +17,7 @@ export const sendReminders = serve(async (context) => {
 
   if (renewalDate.isBefore(dayjs())) {
     console.log(
-      `Renewal date has passed for subscription ${subscriptionId}. Sopping workflow.`,
+      `Renewal date has passed for subscription ${subscriptionId}. Stopping workflow.`,
     );
     return;
   }
