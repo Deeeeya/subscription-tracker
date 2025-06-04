@@ -42,5 +42,3 @@ export const getUserSubscriptions = async (req, res, next) => {
     next(e);
   }
 };
-
-export default createSubscription;
